@@ -62,28 +62,28 @@ carros.forEach(copiaCarros=>{
     }
 })
 
-document.getElementById("carrosNovos").innerHTML += saidaNovo
-document.getElementById("carrosUsados").innerHTML += saidaUsado
+document.getElementById("carrosNovos").innerHTML = saidaNovo
+document.getElementById("carrosUsados").innerHTML = saidaUsado
 
 // Exercício 
 
-const eventos = [
-    {nome:"Festa do morango", estilo:"Gastronomia"},
-    {nome:"Festa da uva", estilo:"Gastronomia"},
-    {nome:"Corrida na 19", estilo:"Esportes"},
-    {nome:"Beach Tennis", estilo:"Esportes"}
-]
+// const eventos = [
+//     {nome:"Festa do morango", estilo:"Gastronomia"},
+//     {nome:"Festa da uva", estilo:"Gastronomia"},
+//     {nome:"Corrida na 19", estilo:"Esportes"},
+//     {nome:"Beach Tennis", estilo:"Esportes"}
+// ]
 
-let saidaGastronomia = "";
-let saidaEsportes = "";
+// let saidaGastronomia = "";
+// let saidaEsportes = "";
 
-eventos.forEach(x => {
-    if (x.estilo === "Gastronomia") {
-        saidaGastronomia += `Nome: ${x.nome} <br>`;
-    } else if (x.estilo === "Esportes") {
-        saidaEsportes += `Nome: ${x.nome} <br>`;
-    }
-});
+// eventos.forEach(x => {
+//     if (x.estilo === "Gastronomia") {
+//         saidaGastronomia += `Nome: ${x.nome} <br>`;
+//     } else if (x.estilo === "Esportes") {
+//         saidaEsportes += `Nome: ${x.nome} <br>`;
+//     }
+// });
 
-document.getElementById("eventosGastronomia").innerHTML += saidaGastronomia;
-document.getElementById("eventosEsportes").innerHTML += saidaEsportes;
+// document.getElementById("eventosGastronomia").innerHTML += saidaGastronomia;
+// document.getElementById("eventosEsportes").innerHTML += saidaEsportes;
