@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumo da PokeAPI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .pokemon-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    .pokemon-info img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .pokemon-info h2 {
+      font-size: 24px;
+      margin-top: 15px;
+    }
+    .pokemon-info p {
+      font-size: 16px;
+    }
+    .input-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .input-container input {
+      padding: 10px;
+      width: 200px;
+      margin-right: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+    .input-container button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Consuma a PokeAPI</h1>
+    <div class="input-container">
+      <input type="text" id="pokemon-input" placeholder="Digite o nome do Pokémon (ex: pikachu)">
+      <button onclick="fetchPokemon()">Buscar Pokémon</button>
+    </div>
+
+    <div class="pokemon-info">
+      <img id="pokemon-img" src="" alt="Imagem do Pokémon">
+      <h2 id="pokemon-name">Nome do Pokémon</h2>
+      <p><strong>Tipo:</strong> <span id="pokemon-type">N/A</span></p>
+      <p><strong>Habilidade:</strong> <span id="pokemon-ability">N/A</span></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
